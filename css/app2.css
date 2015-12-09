@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#header {
+  padding:10px;
+  background-color: #9B9B8C;
+  height: 100px;
+  color: #EEEEEE;
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 37px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 37px;
+  background-color: #686859;
+}
+
+#copy {
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: Avenir;
+  color: #EEEEEE;
+  margin-left: 45px;
+  line-height: 4px;
+}
+
+#heady {
+  font-size: 30px;
+  font-family: avenir;
+  font-weight: lighter;
+  padding-left: 45px;
+  padding-top: 18px;
+}
+
+#images {
+  margin-left: 45px;
+  margin-top: 10px;
+  height: 75px;
+  width: 75px;
+
+}
+
+#albumLists {
+  background-color: #EEEEEE;
+  height: 125px;
+  margin-left: 45px;
+  margin-right: 45px;
+  margin-top: 70px;
+  border: solid 2px black;
+  line-height: 3px;
+  padding-left: 7px;
+}
+
+#listy {
+  font-family: sans-serif;
+}
+
+#clear {
+  background-color: #353526;
+  color: #EEEEEE;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Avenir;
+  border-radius: 5px;
+  height: 37px;
+  width: 170px;
+  float: left;
+  margin-left: 54px;
+}
+
+#submit {
+  background-color: #353526;
+  color: #EEEEEE;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Avenir;
+  border-radius: 5px;
+  height: 37px;
+  width: 170px;
+  float: left;
+  margin-left: 15px;
+}
