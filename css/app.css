@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #EEEEEE;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#header {
+  padding:10px;
+  background-color: #9B9B8C;
+  height: 37px;
+  border-bottom: solid 1px black;
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 37px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 37px;
+  background-color: #686859;
+  /*padding-bottom: 3px;*/
+}
+
+#buttony {
+  background-color: #353526;
+  color: #EEEEEE;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: Avenir;
+  border-radius: 5px;
+  height: 37px;
+  width: 170px;
+}
+
+#track {
+  color: #480063;
+  font-family: Avenir;
+  font-size: 44px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#copy {
+  font-size: 18px;
+  font-weight: lighter;
+  font-family: Avenir;
+  color: #EEEEEE;
+  margin-left: 45px;
+  line-height: 4px;
+}
+
+#button {
+  margin-left: 20%;
+  margin-top: 12%;
+}
+
+/*#tracky {
+  max-height: 100%;
+  width: 50%;
+  float: right;
+  opacity: 19%;
+}*/
