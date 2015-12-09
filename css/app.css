@@ -72,9 +72,10 @@ body {
   margin-top: 12%;
 }
 
-/*#tracky {
-  max-height: 100%;
+#tracky {
+  height: 585px;
   width: 50%;
   float: right;
-  opacity: 19%;
-}*/
+  opacity: 0.19;
+  padding-bottom: 37px;
+}
