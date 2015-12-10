@@ -8,3 +8,15 @@
 // };
 //
 // console.log(getThreeImages());
+$(document).ready(function() {
+  var getter = $.ajax({
+    url: "https://lit-fortress-6467.herokuapp.com/post",
+    method: "POST",
+    data: {goo: "bar"}
+  });
+
+  getter.done(function(payload) {
+    // return response.data;
+    console.log(payload);
+  });
+});
