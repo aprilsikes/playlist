@@ -79,6 +79,7 @@ body {
   opacity: 0.19;
   padding-bottom: 37px;
   z-index: 0;
+  position: relative;
 }
 
 a {
@@ -86,15 +87,18 @@ a {
   color: #EEEEEE;
 }
 
-/*ul {
+#imagine {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 475px;
-  width: 110px;
-  list-style-type: none;
-  border: solid 1px black;
+  height: 525px;
+  width: 200px;
   float: right;
-  position:
-  z-index: 1;
-}*/
+  /*border: solid 1px black;*/
+  position: absolute;
+}
+
+#container2 {
+  position: relative;
+}

@@ -7,30 +7,30 @@ $(document).ready(function () {
     });
 
     getter.done(function(response) {
-      var array = [];
+      var array = []; //shuffleTracks splash page
       for (var i = 0; i < 3; i++) {
         var resultsNum = Math.floor( (Math.random() * response["results"].length) );
         var image = response["results"][resultsNum]["cover_art"];
-        array.push(image);
-      }
-      // return array;
-      console.log(array);
+        // array.push(image);
+        $("#imagine").append('<img src=images/' + image + ' style="width: 170px; height: 170px;"/>');
+      };
+
+      var albumDiv = [];
+      for (var i = 0; i < response["results"].length; i++) {
+        var coverArt = response["results"][i]["cover_art"];
+        var albumId = response["results"][i]["id"];
+        albumDiv.push(coverArt);
+        $("#allAlbums").append('<img id=" ' + albumId[i] + ' "style="width: 75px; height: 75px;" src=images/' + albumDiv[i] + '></img>');
+      };
+
+
+
     });
+
+
 
     getter.fail(function() {
       console.log("Fail");
     });
   // });
 });
-
-
-// function getThreeImages (results) {
-//   var array = [];
-//   for (var i = 0; i < results.length; i++) {
-//     if (array.length < 3) {
-//       array.push(results[i]);
-//     };
-//   }; return array;
-// };
-//
-// console.log(getThreeImages());
